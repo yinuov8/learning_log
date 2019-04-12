@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8da(3_38$bvpt=pp@u@ubu)jr+tt6wm2n$n@1)0f%$exd5(41*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['learning-log.herokuapp.com']
 
 
 # Application definition
