@@ -25,7 +25,7 @@ SECRET_KEY = '8da(3_38$bvpt=pp@u@ubu)jr+tt6wm2n$n@1)0f%$exd5(41*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['learning-log.herokuapp.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
